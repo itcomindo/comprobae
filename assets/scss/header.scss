@@ -1,0 +1,86 @@
+#header {
+  height: 40px;
+  position: relative;
+  top: 40px;
+  z-index: 2;
+  padding-left: 80px;
+  padding-right: 80px;
+  background: rgba(0, 0, 0, 0.01);
+
+  a {
+    color: var(--color-light-1);
+  }
+  .inner-section {
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    .container {
+      height: 100%;
+      .wrapper {
+        height: 100%;
+        .inner {
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          .left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            height: 100%;
+            width: 300px;
+            flex-shrink: 0;
+            h2 {
+              font-size: var(--font-clamp-3);
+              text-transform: uppercase;
+              font-weight: 500;
+              a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+          }
+          .mid {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 20px;
+            .bars {
+              display: none;
+            }
+            ul {
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              gap: 20px;
+              li {
+                margin: 0 20px;
+              }
+            }
+          }
+          .right {
+            height: 100%;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            flex-shrink: 0;
+            a {
+              color: var(--color-primary);
+            }
+          }
+        }
+      }
+    }
+  }
+}

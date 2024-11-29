@@ -1,0 +1,106 @@
+#hero {
+  height: 800px;
+  background-color: var(--cp1-light);
+  color: var(--color-light-1);
+  margin-top: -80px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("/wp-content/themes/comprobae/assets/images/home-hero-top-left.svg");
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 800px;
+    z-index: -1;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 2rem;
+    right: -18rem;
+    background-image: url("/wp-content/themes/comprobae/assets/images/home-hero-top-right.svg");
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 800px;
+  }
+  .inner-section {
+    height: 100%;
+    .container {
+      height: 100%;
+      .wrapper {
+        height: 100%;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        position: relative;
+        &:before {
+          content: "";
+          background-image: url("/wp-content/themes/comprobae/assets/images/home-hero-bg.svg");
+          background-repeat: no-repeat;
+          width: 50%;
+          height: 800px;
+          position: absolute;
+          left: 0;
+          bottom: -140px;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          background-image: url("/wp-content/themes/comprobae/assets/images/home-hero-top-right.svg");
+          background-repeat: no-repeat;
+          width: 50%;
+          height: 300px;
+          transform: rotate(180deg);
+        }
+
+        .inner {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          position: relative;
+          z-index: 2;
+          .item {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 10px;
+            h1 {
+              text-align: left;
+              width: 70%;
+              font-size: 48px;
+              margin: 8px 0;
+            }
+            p {
+              width: 60%;
+            }
+            .groups {
+              display: flex;
+              flex-direction: row;
+              gap: 20px;
+              .btn {
+                &.bg-white {
+                  color: var(--cp1-dark);
+                }
+                &.bg-transparent {
+                  color: var(--color-light-1);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

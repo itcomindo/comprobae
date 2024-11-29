@@ -1,0 +1,92 @@
+#sticky {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  background-color: var(--color-primary);
+  color: var(--bg-primary);
+  .inner-section {
+    .container {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      .wrapper {
+        border-bottom: 1px solid var(--transparent-light-2);
+
+        .section-head {
+          border-color: var(--transparent-light-1);
+        }
+        .items {
+          padding-top: 1.75rem;
+          display: block;
+
+          .item {
+            width: calc(100% / 3 - 20px);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 10px;
+
+            @media (max-width: 540px) {
+              width: calc(100% / 2 - 20px);
+            }
+            @media (max-width: 375px) {
+              width: calc(100% - 20px);
+            }
+
+            .cat {
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              width: max-content;
+              a {
+                color: var(--bg-primary);
+              }
+            }
+            .left {
+              width: 200px;
+              aspect-ratio: 16/9;
+              border-radius: 7px;
+              overflow: hidden;
+              a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                border-radius: 7px;
+                img {
+                  object-fit: cover;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 7px;
+                }
+              }
+            }
+            .right {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              text-align: center;
+              padding: 10px 20px;
+
+              .excerpt {
+                display: none;
+              }
+              h3 {
+                text-align: center;
+                font-size: var(--font-clamp-1);
+                font-weight: 400;
+                margin: 4px 0;
+                a {
+                  color: var(--bg-primary);
+                }
+              }
+              .date {
+                color: var(--cp3-light);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

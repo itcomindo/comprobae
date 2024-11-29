@@ -1,0 +1,55 @@
+.bars {
+  width: 23px;
+  height: 18px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+
+  .bar {
+    height: 2px;
+    background-color: var(--color-light-1);
+    position: absolute;
+
+    &:nth-child(1) {
+      width: 100%;
+      top: 0;
+      left: 0;
+      transition: 0.3s linear all;
+    }
+    &:nth-child(2) {
+      width: 75%;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      transition: 0.3s linear all;
+    }
+    &:nth-child(3) {
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      transition: 0.3s linear all;
+    }
+
+    &.active {
+      background-color: var(--cp2-light);
+
+      &:nth-child(1) {
+        top: 50%;
+        transform: rotate(45deg) translateY(-50%);
+        height: 3px;
+      }
+
+      &:nth-child(2) {
+        right: -100px;
+      }
+
+      &:nth-child(3) {
+        bottom: unset;
+        height: 3px;
+        top: 50%;
+        transform: rotate(-45deg) translateY(-50%);
+      }
+    }
+  }
+}
