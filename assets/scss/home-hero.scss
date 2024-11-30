@@ -48,6 +48,15 @@
           position: absolute;
           left: 0;
           bottom: -140px;
+          @media (max-width: 1024px) {
+            width: 100%;
+          }
+          @media (max-width: 840px) {
+            opacity: 0.3;
+          }
+          @media (max-width: 495px) {
+            opacity: 0.2;
+          }
         }
 
         &:after {
@@ -69,6 +78,8 @@
           align-items: flex-end;
           position: relative;
           z-index: 2;
+          padding-left: 20px;
+          padding-right: 20px;
           .item {
             width: 50%;
             height: 100%;
@@ -77,14 +88,26 @@
             justify-content: center;
             align-items: flex-start;
             gap: 10px;
+            @media (max-width: 840px) {
+              width: 100%;
+            }
             h1 {
               text-align: left;
               width: 70%;
               font-size: 48px;
               margin: 8px 0;
+              @media (max-width: 1024px) {
+                width: 100%;
+              }
+              @media (max-width: 495px) {
+                font-size: var(--font-clamp-4);
+              }
             }
             p {
               width: 60%;
+              @media (max-width: 1024px) {
+                width: 100%;
+              }
             }
             .groups {
               display: flex;
