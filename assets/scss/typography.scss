@@ -143,6 +143,19 @@ a {
   font-family: var(--font-display);
   &.head-section {
     font-size: var(--font-clamp-4);
+    margin: 8px 0;
+  }
+  &.head-card {
+    font-size: var(--font-clamp-1);
+    margin: 4px 0;
+  }
+}
+
+p {
+  &.text {
+    &.text-card {
+      margin: 4px 0;
+    }
   }
 }
 

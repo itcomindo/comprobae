@@ -13,6 +13,7 @@ get_header();
 get_template_part('parts/part', 'home-hero');
 get_template_part('parts/part', 'services');
 get_template_part('parts/part', 'about');
+get_template_part('parts/part', 'works');
 get_template_part('parts/part', 'dummy');
 
 get_footer();

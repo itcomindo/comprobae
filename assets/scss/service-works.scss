@@ -1,4 +1,4 @@
-#services {
+.card-section {
   .inner-section {
     .container {
       .wrapper {
@@ -30,7 +30,6 @@
                 align-items: center;
                 text-align: center;
                 padding: 20px;
-                gap: 10px;
                 .row {
                   width: 64px;
                   overflow: hidden;
@@ -58,6 +57,11 @@
           }
         }
       }
+    }
+  }
+  &#works {
+    #work-head {
+      width: 50%;
     }
   }
 }

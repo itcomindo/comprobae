@@ -2,38 +2,37 @@
 
 /**
  *
- * Part Services File
- * @package  com
+ * Part: Works
+ * @package com
  */
 
 defined('ABSPATH') || die('No script kiddies please!');
 
 ?>
-
-<section id="services" class="section section-high card-section">
+<section id="works" class="section section-high card-section">
     <div class="inner-section">
         <div class="container">
             <div class="wrapper">
                 <div class="inner">
                     <div class="top">
-                        <h2 class="head head-section">Create your awesome digital product with us</h2>
-                        <p class="text-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cumque ea enim aliquid, sunt amet eum vitae nostrum. Sequi, doloremque natus quibusdam iusto illo vitae.</p>
+                        <h2 id="work-head" class="head head-section">Top four the reason why you should choosing us.</h2>
+                        <p class="text-section">In quo quaerimus, non numquam eius modi tempora incidunt,</p>
                     </div>
                     <div class="mid">
                         <div class="items">
                             <div class="item">
-                                <div class="row"><img src="<?php echo THEME_URL . '/assets/images/websitedevelopment.svg'; ?>" alt=""></div>
-                                <h3 class="head head-card">Website Development</h3>
+                                <div class="row"><img src="<?php echo THEME_URL . '/assets/images/experience.svg'; ?>" alt=""></div>
+                                <h3 class="head head-card">Experience</h3>
                                 <p class="text text-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, aperiam!</p>
                             </div>
                             <div class="item">
-                                <div class="row"><img src="<?php echo THEME_URL . '/assets/images/mobile.svg'; ?>" alt=""></div>
-                                <h3 class="head head-card">Mobile Development</h3>
+                                <div class="row"><img src="<?php echo THEME_URL . '/assets/images/easy.svg'; ?>" alt=""></div>
+                                <h3 class="head head-card">Easy Communication</h3>
                                 <p class="text text-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, aperiam!</p>
                             </div>
                             <div class="item">
-                                <div class="row"><img src="<?php echo THEME_URL . '/assets/images/brand.svg'; ?>" alt=""></div>
-                                <h3 class="head head-card">Brand Identity</h3>
+                                <div class="row"><img src="<?php echo THEME_URL . '/assets/images/comfortable.svg'; ?>" alt=""></div>
+                                <h3 class="head head-card">Comfortable</h3>
                                 <p class="text text-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, aperiam!</p>
                             </div>
                         </div>

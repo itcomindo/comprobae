@@ -1,5 +1,6 @@
 #hero {
-  height: 800px;
+  // height: 800px;
+  height: calc(100vh + 80px);
   background-color: var(--cp1-light);
   color: var(--color-light-1);
   margin-top: -80px;

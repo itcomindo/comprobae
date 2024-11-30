@@ -10,7 +10,7 @@ defined('ABSPATH') || die('No script kiddies please!');
 
 ?>
 
-<section class="section dummy">
+<section class="section dummy dark">
     <div class="inner-section">
         <div class="container">
             <div class="wrapper">

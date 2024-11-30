@@ -53,6 +53,9 @@ section,
     height: 50vh;
     padding-top: 7rem;
     padding-bottom: 7rem;
+    &.dark {
+      background-color: var(--cp1-dark);
+    }
   }
 
   .inner-section {
