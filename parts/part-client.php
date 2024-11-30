@@ -44,6 +44,9 @@ defined('ABSPATH') || die('No script kiddies please!');
                         </div>
                     </div>
                 </div>
+                <?php
+                get_template_part('parts/part', 'subscription-form');
+                ?>
             </div>
         </div>
     </div>

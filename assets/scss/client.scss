@@ -4,6 +4,9 @@
     .inner-section {
       .container {
         .wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
           .inner {
             display: flex;
             flex-direction: column;
@@ -59,12 +62,55 @@
               }
             }
           }
+          #subcription {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            color: var(--color-light-1);
+            position: relative;
+            .items {
+              background-color: var(--cp1-dark);
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              width: 75%;
+              padding: 40px;
+              left: 50%;
+              top: 50%;
+              border-radius: 5px;
+              box-shadow: var(--box-shadow-3);
+              .item {
+                width: max-content;
+                label {
+                  display: none;
+                }
+                input {
+                  width: 300px;
+                  height: 40px;
+                  box-sizing: border-box;
+                  padding: 5px;
+                  border: none;
+                  border-radius: 5px;
+                  margin-right: 5px;
+                }
+                button {
+                  border-radius: 5px;
+                  width: 40px;
+                  height: 40px;
+                  padding: 5px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  border: none;
+                }
+              }
+            }
+          }
         }
-      }
-    }
-    &#works {
-      #work-head {
-        width: 50%;
       }
     }
   }
