@@ -1,0 +1,51 @@
+#blog {
+  background-color: var(--color-light-3);
+  .inner-section {
+    .container {
+      .wrapper {
+        .inner {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 40px;
+          .top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3 {
+              width: 50%;
+              text-align: center;
+            }
+            p {
+              width: 50%;
+              text-align: center;
+            }
+          }
+          .mid {
+            width: 80%;
+            .items {
+              .item {
+                background-color: var(--color-light-2);
+                .bot {
+                  h3 {
+                    a {
+                      border: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .bot {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a {
+              border: 1px solid var(--cp1-light);
+            }
+          }
+        }
+      }
+    }
+  }
+}
