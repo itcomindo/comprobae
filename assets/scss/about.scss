@@ -1,27 +1,54 @@
 #about {
   background-color: var(--cp1-light);
-  height: 600px;
   color: var(--color-light-1);
   overflow: visible;
   .inner-section {
-    height: 100%;
     .container {
-      height: 100%;
       .wrapper {
-        height: 100%;
+        @media (max-width: 1028px) {
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+        }
+        @media (max-width: 768px) {
+          padding-top: 5rem;
+        }
         .inner {
-          height: 100%;
           display: flex;
           flex-direction: row;
           align-items: center;
+          justify-content: stretch;
+          @media (max-width: 768px) {
+            flex-direction: column;
+          }
           .left {
             display: flex;
             flex-direction: column;
+            justify-content: center;
             flex-basis: 50%;
             gap: 20px;
+
+            @media (max-width: 495px) {
+              width: 100%;
+            }
+
             h2 {
               width: 60%;
               margin: 8px 0;
+              @media (max-width: 1440px) {
+                width: 75%;
+              }
+              @media (max-width: 1028px) {
+                width: 100%;
+                margin-bottom: 0;
+              }
+            }
+            p {
+              @media (max-width: 768px) {
+                width: 50%;
+              }
+              @media (max-width: 495px) {
+                width: 100%;
+              }
             }
           }
           .right {
@@ -34,6 +61,23 @@
               position: relative;
               bottom: -7rem;
               width: 90%;
+              @media (max-width: 768px) {
+                width: 50%;
+                position: absolute;
+              }
+              @media (max-width: 640px) {
+                bottom: -2rem;
+              }
+              @media (max-width: 540px) {
+                bottom: 0;
+              }
+              @media (max-width: 495px) {
+                bottom: -7rem;
+              }
+              img {
+                width: 90%;
+                height: auto;
+              }
             }
           }
         }

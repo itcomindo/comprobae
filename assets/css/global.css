@@ -781,6 +781,22 @@ a {
   font-size: var(--font-clamp-1);
   margin: 4px 0;
 }
+.head.lw75mw100 {
+  width: 75%;
+}
+@media (max-width: 840px) {
+  .head.lw75mw100 {
+    width: 100%;
+  }
+}
+.head.lw50mw100 {
+  width: 50%;
+}
+@media (max-width: 840px) {
+  .head.lw50mw100 {
+    width: 100%;
+  }
+}
 
 p.text.text-card {
   margin: 4px 0;
@@ -817,6 +833,19 @@ p.text-section {
   font-size: 120%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  p.text-section {
+    font-size: var(--font-clamp-1);
+  }
+}
+p.lw50mw100 {
+  width: 50%;
+}
+@media (max-width: 840px) {
+  p.lw50mw100 {
+    width: 100%;
+  }
 }
 
 .uppercase {
@@ -1457,27 +1486,24 @@ a.btn.border-light {
 .card-section .inner-section .container .wrapper .inner .bot .btn {
   border: 1px solid var(--cp1-light);
 }
-.card-section#works #work-head {
-  width: 50%;
-}
 
 #about {
   background-color: var(--cp1-light);
-  height: 600px;
   color: var(--color-light-1);
   overflow: visible;
 }
-#about .inner-section {
-  height: 100%;
+@media (max-width: 1028px) {
+  #about .inner-section .container .wrapper {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
-#about .inner-section .container {
-  height: 100%;
-}
-#about .inner-section .container .wrapper {
-  height: 100%;
+@media (max-width: 768px) {
+  #about .inner-section .container .wrapper {
+    padding-top: 5rem;
+  }
 }
 #about .inner-section .container .wrapper .inner {
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1488,6 +1514,17 @@ a.btn.border-light {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: stretch;
+  -ms-flex-pack: stretch;
+  justify-content: stretch;
+}
+@media (max-width: 768px) {
+  #about .inner-section .container .wrapper .inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }
 #about .inner-section .container .wrapper .inner .left {
   display: -webkit-box;
@@ -1497,13 +1534,42 @@ a.btn.border-light {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
   gap: 20px;
 }
+@media (max-width: 495px) {
+  #about .inner-section .container .wrapper .inner .left {
+    width: 100%;
+  }
+}
 #about .inner-section .container .wrapper .inner .left h2 {
   width: 60%;
   margin: 8px 0;
+}
+@media (max-width: 1440px) {
+  #about .inner-section .container .wrapper .inner .left h2 {
+    width: 75%;
+  }
+}
+@media (max-width: 1028px) {
+  #about .inner-section .container .wrapper .inner .left h2 {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  #about .inner-section .container .wrapper .inner .left p {
+    width: 50%;
+  }
+}
+@media (max-width: 495px) {
+  #about .inner-section .container .wrapper .inner .left p {
+    width: 100%;
+  }
 }
 #about .inner-section .container .wrapper .inner .right {
   display: -webkit-box;
@@ -1524,6 +1590,31 @@ a.btn.border-light {
   position: relative;
   bottom: -7rem;
   width: 90%;
+}
+@media (max-width: 768px) {
+  #about .inner-section .container .wrapper .inner .right .inner-right {
+    width: 50%;
+    position: absolute;
+  }
+}
+@media (max-width: 640px) {
+  #about .inner-section .container .wrapper .inner .right .inner-right {
+    bottom: -2rem;
+  }
+}
+@media (max-width: 540px) {
+  #about .inner-section .container .wrapper .inner .right .inner-right {
+    bottom: 0;
+  }
+}
+@media (max-width: 495px) {
+  #about .inner-section .container .wrapper .inner .right .inner-right {
+    bottom: -7rem;
+  }
+}
+#about .inner-section .container .wrapper .inner .right .inner-right img {
+  width: 90%;
+  height: auto;
 }
 
 #blog {
@@ -1553,6 +1644,7 @@ a.btn.border-light {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  text-align: center;
 }
 #blog .inner-section .container .wrapper .inner .top h3 {
   width: 50%;
