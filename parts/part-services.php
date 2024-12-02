@@ -24,7 +24,7 @@ defined('ABSPATH') || die('No script kiddies please!');
                             <div class="item">
                                 <div class="row"><img src="<?php echo THEME_URL . '/assets/images/websitedevelopment.svg'; ?>" alt=""></div>
                                 <h3 class="head head-card">Website Development</h3>
-                                <p class="text text-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, aperiam!</p>
+                                <p class="text text-card lw50mw100">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, aperiam!</p>
                             </div>
                             <div class="item">
                                 <div class="row"><img src="<?php echo THEME_URL . '/assets/images/mobile.svg'; ?>" alt=""></div>

@@ -2,6 +2,7 @@
   background-color: var(--cp1-dark);
   color: var(--color-light-1);
   position: relative;
+  padding-bottom: 20px;
 
   .custom-shape-divider-top-1732968867 {
     position: absolute;
@@ -35,10 +36,29 @@
             gap: 10px;
             border-bottom: 1px solid var(--transparent-light-1);
             padding-bottom: 3rem;
+            @media (max-width: 767px) {
+              grid-template-columns: repeat(3, 1fr);
+            }
+            @media (max-width: 540px) {
+              grid-template-columns: 1fr;
+            }
             .group {
               display: flex;
               flex-direction: column;
               gap: 10px;
+              &:first-child {
+                @media (max-width: 767px) {
+                  grid-column: span 3;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  text-align: center;
+                  padding-top: 2rem;
+                }
+                @media (max-width: 540px) {
+                  grid-column: auto;
+                }
+              }
               a {
                 color: var(--color-light-1);
               }

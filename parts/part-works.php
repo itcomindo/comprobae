@@ -16,7 +16,7 @@ defined('ABSPATH') || die('No script kiddies please!');
                 <div class="inner">
                     <div class="top">
                         <h2 id="work-head" class="head head-section lw50mw100">Top four the reason why you should choosing us.</h2>
-                        <p class="text-section">In quo quaerimus, non numquam eius modi tempora incidunt,</p>
+                        <p class="text-section lw50mw100">In quo quaerimus, non numquam eius modi tempora incidunt,</p>
                     </div>
                     <div class="mid">
                         <div class="items">

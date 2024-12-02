@@ -12,9 +12,6 @@
             flex-direction: column;
             text-align: center;
             align-items: center;
-            p {
-              width: 50%;
-            }
           }
           .mid {
             display: flex;
@@ -24,6 +21,9 @@
               display: grid;
               grid-template-columns: repeat(3, 1fr);
               gap: 20px;
+              @media (max-width: 540px) {
+                grid-template-columns: 1fr;
+              }
               .item {
                 display: flex;
                 flex-direction: column;

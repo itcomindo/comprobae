@@ -1,5 +1,4 @@
 #hero {
-  // height: 800px;
   height: calc(100vh + 80px);
   background-color: var(--cp1-light);
   color: var(--color-light-1);
@@ -48,14 +47,15 @@
           position: absolute;
           left: 0;
           bottom: -140px;
+          @media (min-width: 2560px) {
+            left: -20rem;
+          }
           @media (max-width: 1024px) {
             width: 100%;
           }
           @media (max-width: 840px) {
-            opacity: 0.3;
-          }
-          @media (max-width: 495px) {
-            opacity: 0.2;
+            height: 50%;
+            bottom: 0;
           }
         }
 
