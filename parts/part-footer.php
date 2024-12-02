@@ -58,3 +58,7 @@ defined('ABSPATH') || die('No script kiddies please!');
         </div>
     </div>
 </section>
+
+<?php
+
+get_template_part('parts/part', 'welcome-footer');
