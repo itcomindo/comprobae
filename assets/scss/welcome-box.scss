@@ -66,15 +66,26 @@
   display: flex;
   flex-direction: column;
   z-index: 77;
-  overflow: hidden;
   background-color: var(--cp1-light);
   position: fixed;
   bottom: 1rem;
   right: 1rem;
   transform: scale(0);
   transition: 0.3s ease-in-out all;
+  border: 1px solid var(--transparent-light-1);
   &.active {
     transform: scale(1);
+  }
+  &:before {
+    content: "";
+    width: 100%;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--transparent-dark-1);
+    position: absolute;
+    left: 0;
+    bottom: -16px;
+    filter: blur(5px);
   }
   .inner {
     width: 100%;

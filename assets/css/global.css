@@ -2348,7 +2348,6 @@ a.btn.border-light {
   -ms-flex-direction: column;
   flex-direction: column;
   z-index: 77;
-  overflow: hidden;
   background-color: var(--cp1-light);
   position: fixed;
   bottom: 1rem;
@@ -2357,10 +2356,23 @@ a.btn.border-light {
   transform: scale(0);
   -webkit-transition: 0.3s ease-in-out all;
   transition: 0.3s ease-in-out all;
+  border: 1px solid var(--transparent-light-1);
 }
 #chat.active {
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+#chat:before {
+  content: "";
+  width: 100%;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--transparent-dark-1);
+  position: absolute;
+  left: 0;
+  bottom: -16px;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
 }
 #chat .inner {
   width: 100%;
