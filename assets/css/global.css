@@ -338,6 +338,11 @@ body a {
 body.no-scroll {
   overflow: hidden;
 }
+body.single #header {
+  background-color: var(--cp1-dark) !important;
+  top: 0;
+  height: 100px;
+}
 
 ul.list-no-style,
 ol.list-no-style {
@@ -2411,4 +2416,52 @@ a.btn.border-light {
 #chat .inner a i {
   font-size: 1.7rem;
   color: var(--color-light-1);
+}
+
+#sing {
+  background-color: var(--color-light-1);
+}
+#sing .inner-section .container .wrapper .inner {
+  width: 768px;
+}
+#sing .inner-section .container .wrapper .inner .row {
+  padding: 20px;
+}
+#sing .inner-section .container .wrapper .inner .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+#sing .inner-section .container .wrapper .inner .top h1 {
+  font-size: var(--font-clamp-5);
+}
+#sing .inner-section .container .wrapper .inner .fim img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+#sing .inner-section .container .wrapper .inner .mid #the-content h2 {
+  font-size: var(--font-clamp-4);
+}
+#sing .inner-section .container .wrapper .inner .mid #the-content h3 {
+  font-size: var(--font-clamp-3);
+}
+#sing .inner-section .container .wrapper .inner .mid #the-content h4,
+#sing .inner-section .container .wrapper .inner .mid #the-content h5 {
+  font-size: var(--font-clamp-2);
+}
+#sing .inner-section .container .wrapper .inner .mid #the-content ul li,
+#sing .inner-section .container .wrapper .inner .mid #the-content ol li {
+  margin-bottom: 8px;
+}
+#sing .inner-section .container .wrapper .inner .mid #the-content ul li:last-child,
+#sing .inner-section .container .wrapper .inner .mid #the-content ol li:last-child {
+  margin-bottom: 0;
+}
+#sing .inner-section .container .wrapper .inner .mid #the-content p {
+  line-height: 1.8;
 }

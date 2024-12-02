@@ -24,6 +24,14 @@ body {
   &.no-scroll {
     overflow: hidden;
   }
+
+  &.single {
+    #header {
+      background-color: var(--cp1-dark) !important;
+      top: 0;
+      height: 100px;
+    }
+  }
 }
 
 ul.list-no-style,
