@@ -2420,6 +2420,7 @@ a.btn.border-light {
 
 #sing {
   background-color: var(--color-light-1);
+  color: var(--color-primary);
 }
 #sing .inner-section .container .wrapper .inner {
   width: 768px;
