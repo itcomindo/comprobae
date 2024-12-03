@@ -2945,7 +2945,7 @@ a.btn.border-light {
   padding: 20px;
   border: 3px dotted var(--transparent-light-1);
   border-radius: 10px;
-  row-gap: 10px;
+  row-gap: 5px;
   margin: 0 20px;
 }
 #teams .inner-section .bot .groups .group .item .photo {
@@ -2961,6 +2961,12 @@ a.btn.border-light {
   -webkit-filter: grayscale(60%);
   filter: grayscale(60%);
 }
+#teams .inner-section .bot .groups .group .item .name {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+}
 #teams .inner-section .bot .groups .group .item .job {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2972,5 +2978,4 @@ a.btn.border-light {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 5px 0;
 }

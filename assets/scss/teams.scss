@@ -42,7 +42,7 @@
             padding: 20px;
             border: 3px dotted var(--transparent-light-1);
             border-radius: 10px;
-            row-gap: 10px;
+            row-gap: 5px;
             margin: 0 20px;
 
             .photo {
@@ -57,11 +57,15 @@
               }
             }
 
+            .name {
+              width: max-content;
+              margin: 0 auto;
+            }
+
             .job {
               display: flex;
               flex-direction: column;
               align-items: center;
-              padding: 5px 0;
             }
           }
         }

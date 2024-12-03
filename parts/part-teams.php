@@ -25,32 +25,30 @@ defined('ABSPATH') || die('No script kiddies please!');
         </div>
         <div class="bot">
             <div class="groups carousel-wrapper">
-                <div class="group carousel-item">
-                    <?php
-                    for ($i = 0; $i < 6; $i++) {
-                    ?>
-                        <div class="item">
-                            <div class="photo"><img src="<?php echo THEME_URL . '/assets/images/person(' . $i . ').jpg'; ?>" alt="Web Developer"></div>
-                            <div class="job text smaller">Web Developer</div>
-                        </div>
-                    <?php
-                    }
-                    ?>
-                </div>
+                <?php
+                com_dummy_staff();
+                ?>
             </div>
         </div>
     </div>
 </section>
 <?php
+
+
+/**
+ * Dummy Staff
+ * @param int $item
+ */
 function com_dummy_staff($item = 6)
 {
 ?>
-    <div class="group">
+    <div class="group carousel-item">
         <?php
-        for ($i = 0; $i < $item; $i++) {
+        for ($i = 0; $i < 6; $i++) {
         ?>
             <div class="item">
                 <div class="photo"><img src="<?php echo THEME_URL . '/assets/images/person(' . $i . ').jpg'; ?>" alt="Web Developer"></div>
+                <div class="name text smaller">John Doe</div>
                 <div class="job text smaller">Web Developer</div>
             </div>
         <?php
