@@ -21,15 +21,9 @@ defined('ABSPATH') || die('No script kiddies please!');
                     </div>
                     <!-- mid -->
                     <div class="mid">
-                        <nav id="header-menu">
-                            <ul class="list-no-style">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Works</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Blog</a></li>
-                            </ul>
-                        </nav>
+                        <?php
+                        echo com_display_menu('header-menu', 'header-menu', 'list-no-style menu-list horizontal');
+                        ?>
                         <?php
                         get_template_part('inc/components/bars');
                         ?>

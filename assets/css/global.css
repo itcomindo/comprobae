@@ -462,10 +462,20 @@ div {
   max-width: 100%;
 }
 
+button,
+label,
+table,
+thead,
+td,
+tr,
 div,
 select,
 textarea,
-input {
+input,
+nav,
+small,
+i,
+blockquote {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -2443,7 +2453,7 @@ a.btn.border-light {
 #chat-box {
   position: fixed;
   right: 2rem;
-  bottom: 7rem;
+  bottom: 1rem;
   width: 350px;
   border-radius: 10px;
   z-index: 77;

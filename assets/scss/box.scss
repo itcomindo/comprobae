@@ -82,16 +82,28 @@ section,
     }
   }
 }
+
 div {
   width: 100%;
   max-width: 100%;
 }
+button,
+label,
+table,
+thead,
+td,
+tr,
 div,
 select,
 textarea,
-input {
+input,
+nav,
+small,
+i,
+blockquote {
   box-sizing: border-box;
 }
+
 .flex-col {
   display: flex;
   flex-direction: column;
