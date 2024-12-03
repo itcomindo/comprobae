@@ -37,14 +37,16 @@ function nbt_load_assets()
     //Enqueue scripts.
     wp_enqueue_script('nbt-script', THEME_ASSETS . '/js/global.min.js', array(), THEME_VERSION, true);
 
+    if (is_front_page()) {
+        wp_enqueue_script('sticky-kit-js', 'https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js', array(), '3.7.11', true);
+        wp_enqueue_script('nbt-front-page', THEME_ASSETS . '/js/front-page.min.js', array(), THEME_VERSION, true);
+    }
+
 
     // this is will be loaded only in the home page.
     if (is_home()) {
         //Load Flickity.
         wp_enqueue_script('flickity', 'https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js', array(), '2.2.2', true);
-
-        // Load notification.js (this is under development).
-        // wp_enqueue_script('nbt-notification', THEME_ASSETS . '/js/notification.min.js', array(), THEME_VERSION, true);
 
         //Load home.min.js.
         wp_enqueue_script('nbt-home', THEME_ASSETS . '/js/home.min.js', array(), THEME_VERSION, true);

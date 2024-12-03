@@ -88,31 +88,30 @@
     * @todo Text
     *=========================
     */
-.lw75-mw100 {
-  width: 75%;
-  display: block;
-}
+
 a {
   text-decoration: none;
 }
 
-.text-smaller {
-  font-size: 80%;
-}
-.text-small {
-  font-size: 90%;
-}
+.text {
+  &.smaller {
+    font-size: 80%;
+  }
+  &.small {
+    font-size: 90%;
+  }
 
-.text-medium {
-  font-size: 120%;
-}
+  &.medium {
+    font-size: 120%;
+  }
 
-.text-big {
-  font-size: 150%;
-}
+  &.big {
+    font-size: 150%;
+  }
 
-.text-bigger {
-  font-size: 200%;
+  &.bigger {
+    font-size: 200%;
+  }
 }
 
 .text-center {
@@ -125,11 +124,6 @@ a {
 
 .text-right {
   text-align: right;
-}
-
-.lw75-hw100 {
-  width: 75%;
-  display: block;
 }
 
 /**
@@ -163,40 +157,9 @@ a {
   }
 }
 
-p {
-  &.text {
-    &.text-card {
-      margin: 4px 0;
-    }
-  }
-}
-
-.head-smaller {
-  font-size: var(--font-clamp-1);
-}
-.head-small {
-  font-size: var(--font-clamp-2);
-}
-.head-medium {
-  font-size: var(--font-clamp-3);
-  line-height: 1.2;
-}
-.head-big {
-  font-size: var(--font-clamp-4);
-  line-height: 1.2;
-}
-.head-bigger {
-  font-size: var(--font-clamp-5);
-  line-height: 1.2;
-}
-
-h3 {
-  &.item-post-title {
-    font-size: var(--font-clamp-1);
-  }
-}
-
-p {
+p,
+span,
+div {
   &.text-section {
     font-size: 120%;
     box-sizing: border-box;
@@ -208,6 +171,21 @@ p {
   &.lw50mw100 {
     width: 50%;
     @media (max-width: 840px) {
+      width: 100%;
+    }
+  }
+  &.lw75mw100 {
+    width: 75%;
+    @media (max-width: 840px) {
+      width: 100%;
+    }
+  }
+  &.lw50mw75sw100 {
+    width: 50%;
+    @media (max-width: 840px) {
+      width: 75%;
+    }
+    @media (max-width: 600px) {
       width: 100%;
     }
   }
