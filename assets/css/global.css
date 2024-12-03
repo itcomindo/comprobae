@@ -2891,6 +2891,21 @@ a.btn.border-light {
   flex-direction: column;
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
+  position: relative;
+}
+#testimonial .inner-section .container .wrapper .inner .items .left .icon {
+  width: 300px;
+  height: 300px;
+  font-size: 300px;
+  position: absolute;
+  bottom: -17rem;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  opacity: 0.5;
+  left: 0;
+}
+#testimonial .inner-section .container .wrapper .inner .items .left .icon i {
+  color: var(--color-light-2);
 }
 #testimonial .inner-section .container .wrapper .inner .items .left span i {
   font-size: 5rem;

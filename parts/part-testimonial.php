@@ -20,6 +20,7 @@ defined('ABSPATH') || die('No script kiddies please!');
                             <span><i class="fas fa-quote-left"></i></span>
                             <h2 class="head head-section">What our Client Say?</h2>
                             <p class="text text-section">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur sit quas sed quibusdam aspernatur recusandae.</p>
+                            <div class="icon"><i class="fa-regular fa-star"></i></div>
                         </div>
                         <div class="right">
                             <div class="groups">

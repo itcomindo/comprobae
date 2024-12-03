@@ -38,7 +38,17 @@ function nbt_load_assets()
     wp_enqueue_script('nbt-script', THEME_ASSETS . '/js/global.min.js', array(), THEME_VERSION, true);
 
     if (is_front_page()) {
+
+        // Load Sticky Kit.
         wp_enqueue_script('sticky-kit-js', 'https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js', array(), '3.7.11', true);
+
+        // Load GSAP.
+        wp_enqueue_script('gsap-js', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js', array(), '3.12.5', true);
+
+        // Load ScrollTrigger.
+        wp_enqueue_script('scroll-trigger-js', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js', array(), '3.12.5', true);
+
+        // Load front-page.min.js.
         wp_enqueue_script('nbt-front-page', THEME_ASSETS . '/js/front-page.min.js', array(), THEME_VERSION, true);
     }
 

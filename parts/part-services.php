@@ -16,7 +16,7 @@ defined('ABSPATH') || die('No script kiddies please!');
             <div class="wrapper">
                 <div class="inner">
                     <div class="top">
-                        <h2 class="head head-section lw50mw100">Create your awesome digital product with us</h2>
+                        <h2 id="head-service" class="head head-section lw50mw100">Create your awesome digital product <br>with us</h2>
                         <p class="text-section lw50mw100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cumque ea enim aliquid, sunt amet eum vitae nostrum. Sequi, doloremque natus quibusdam iusto illo vitae.</p>
                     </div>
                     <div class="mid">
@@ -39,7 +39,7 @@ defined('ABSPATH') || die('No script kiddies please!');
                         </div>
                     </div>
                     <div class="bot">
-                        <a href="#" class="btn medium transparent borad-7">Learn More</a>
+                        <a id="btn-service" href="#" class="btn medium transparent borad-7">Learn More</a>
                     </div>
                 </div>
             </div>
