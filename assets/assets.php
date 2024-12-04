@@ -50,6 +50,9 @@ function nbt_load_assets()
 
         // Load front-page.min.js.
         wp_enqueue_script('nbt-front-page', THEME_ASSETS . '/js/front-page.min.js', array(), THEME_VERSION, true);
+
+        // Load skills-carousel.min.js.
+        wp_enqueue_script('nbt-skills-carousel', THEME_ASSETS . '/js/skills-carousel.min.js', array(), THEME_VERSION, true);
     }
 
 

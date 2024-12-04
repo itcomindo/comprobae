@@ -1,5 +1,26 @@
 #clients {
   background-color: var(--color-light-1);
+  position: relative;
+
+  .custom-shape-divider-top-1733275971 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+    svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 100px;
+    }
+    .shape-fill {
+      fill: #dddddd;
+    }
+  }
+
   &.card-section {
     .inner-section {
       .container {
@@ -17,6 +38,7 @@
               flex-direction: column;
               text-align: center;
               align-items: center;
+              padding-top: 50px;
             }
             .mid {
               display: flex;
